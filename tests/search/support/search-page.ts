@@ -1,7 +1,5 @@
 import { expect, type Locator, type Page } from '@playwright/test';
 
-export const FLIPKART_URL = 'https://www.flipkart.com';
-
 export class SearchPage {
   readonly searchBox: Locator;
 
@@ -10,7 +8,7 @@ export class SearchPage {
   }
 
   async open() {
-    await this.page.goto(FLIPKART_URL, { waitUntil: 'commit' });
+    await this.page.goto('/', { waitUntil: 'commit' });
     await expect(this.searchBox).toBeVisible();
   }
 

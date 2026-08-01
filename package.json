@@ -1,0 +1,19 @@
+{
+  "name": "ai-e2e-testsingframework",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:search": "playwright test tests/search",
+    "test:chromium": "playwright test --project=chromium",
+    "report": "playwright show-report"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "Requirements-driven Playwright QA framework with MCP-assisted planning, exploration, generation, healing, and reporting.",
+  "devDependencies": {
+    "@playwright/test": "^1.62.1",
+    "@types/node": "^26.1.2"
+  }
+}
